@@ -49,7 +49,7 @@
 
 #### What techniques can you use while debugging a program in Python?
 #### What does step over, step into and step out mean while using the debugger?
-#### How can you start the program from a certain line using the debugger? (careful, tricky! :) )
+#### How can you start to debug a program from a certain line using the debugger?
 
 ### Version control
 
@@ -73,9 +73,8 @@
 #### What is exception handling?
 #### What are the basics of exception handling in Python?
 #### In which case should we catch an exception? Why?
-#### How can we handle an exception? What can we and should we do with an exception in the ‘except’ block?
-#### When do we use an if statement and when exception handling during programming?
-#### What does the else and finally statement in a try-except block in Python?
+#### What can/should we do with an exception in the ‘except’ block?
+#### What does the else and finally statement do in a try-except block in Python?
 
 ## Software Development Methodologies
 
@@ -88,7 +87,7 @@
 #### What is UNIX and what is Linux?
 #### What do we call the shell in Linux?
 #### What does root means in a Linux environment?
-#### How do you access your hard drives in Linux?
+#### How do you access your personal files in Linux?
 #### How can you install an application in Linux?
 #### What do we call a repository in Linux? (context: package management)
 #### How do you navigate in the filesystem with the command line?
