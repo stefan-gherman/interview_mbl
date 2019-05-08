@@ -4,14 +4,13 @@
 
 ### Data structures
 
-#### What is the purpose and working method of a list/array data structure?
+#### What is the purpose of a list (array in some programming languages) data structure? Name some methods of it!
 #### What is the difference between a list/array and a set?
-#### What can you tell about the stack and queue data structure?
-#### What is the purpose and working method of a dictionary/map data structure?
+#### What is the purpose and methods of a dictionary/map data structure?
 
 ### Algorithms
 
-#### Fibonacci sequences. Write a method(or pseudo code), that generates the Fibonacci sequences.
+#### Fibonacci sequences. Write a method (or pseudo code), that generates the Fibonacci sequences.
 #### How do you find a max value in a list/array if you can’t use any built-in functions?
 #### What do we call an *in-place* sort?
 
@@ -20,7 +19,7 @@
 #### What is “Stack overflow”? Write a code, that ends up with stack overflow. What is the call stack?
 #### What is the function signature?
 
-### Programming languages - Python
+### Programming languages - Python  
 #### How do you use a dictionary in Python?
 #### What does it mean that an object is Immutable in Python?
 #### What is conditional expression in Python?

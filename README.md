@@ -69,4 +69,4 @@ python3 -m http.server 8080
 
 If you've started the web server on port 8080
 then you can open the page in your browser:
-http://localhost:8080/public/#/ or http://0.0.0.0:8080/public/#/
+http://localhost:8080/#/ or http://0.0.0.0:8080/#/
