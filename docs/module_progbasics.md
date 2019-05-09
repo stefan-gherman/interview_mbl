@@ -89,9 +89,9 @@
 #### What does root means in a Linux environment?
 #### How do you access your personal files in Linux?
 #### How can you install an application in Linux?
-#### What do we call a repository in Linux? (context: package management)
+#### What is package management in Linux, what are repositories?
 #### How do you navigate in the filesystem with the command line?
 #### What does the following commands do: mkdir, rm, cat, cp, touch?
 #### How can you look up what does a command do in Linux if you have no internet connection?
 #### What does the following commands do: head, tail, more, less?
-#### How do you download a file from the internet using the terminal?
+#### How do you download a file from internet using the terminal?
