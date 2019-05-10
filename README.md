@@ -10,9 +10,11 @@ Questions are separated to modules. When finishing a module, the questions in th
 
 ## How to work on this repo
 
+You can use [this](https://classroom.github.com/a/bv-gRnai) link to clone the repo.
+
 ### Review process
 
-This very workbook used to be in Google Docs in the very old times, where students collaboratively filled the answers. We believe that collaboration is a must, but we'd like to also increase the amount of personal work. 
+This very workbook used to be in Google Docs in the very old times, where students collaboratively filled the answers. We believe that collaboration is a must, but we'd like to also increase the amount of personal work.
 
 Collaboration should happen in the following way. In every module you have to find someone from the next module who'll review your modifications in your repository. People of the advanced module should find someone from the alumni, or someone from the module peers.
 
