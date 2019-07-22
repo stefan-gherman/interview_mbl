@@ -20,6 +20,8 @@
 ### Other
 
 #### What is a garbage collector, in a nutshell?
+In computer science, garbage collection (GC) is a form of automatic memory management. The garbage collector, or just collector, attempts to reclaim garbage, or memory occupied by objects that are no longer in use by the program. Garbage collection was invented by John McCarthy around 1959 to simplify manual memory management in Lisp.
+
 
 ## Programming paradigms
 
