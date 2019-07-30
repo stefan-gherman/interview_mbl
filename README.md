@@ -18,6 +18,7 @@ This very workbook used to be in Google Docs in the very old times, where studen
 
 Collaboration should happen in the following way. In every module you have to find someone from the next module who'll review your modifications in your repository. People of the advanced module should find someone from the alumni, or someone from the module peers.
 
+**Applicable from the second module:**
 The workbooks development should happen in git branches, merging those with pull requests (people in the progbasics room should ask their peers, they already know what git branching is about). Review comments should happen through Github's code review functionality.
 
 ## About markdown (the format of questions and answers)
