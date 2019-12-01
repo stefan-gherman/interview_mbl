@@ -122,6 +122,10 @@ A swap between the current element and the element at the new <code>min_index</c
 ### Programming paradigms - procedural
 
 #### What is the call stack?
+<p>
+The 
+</p>
+
 #### What is “Stack overflow”?
 #### What are the main parts of a function?
 
