@@ -64,7 +64,7 @@ dict.items() - returns a list of key-value pairs in a dictionary.
     			fib_list.extend([0, 1])
     			count = 1
     			while count < elements-1:
-        			fib_list.append(fib_list[count] + fib_list[count - 1])
+        			fib_list.append(fib_list[count] + fib_lis[count- 1])
        				 count += 1
     			return fib_list
 
@@ -107,14 +107,16 @@ A swap between the current element and the element at the new <code>min_index</c
 </p>
 
 <p>
-		def selection_sort(lst):
-			for i in range(len(lst)):
-        			min_index = i
-        			for j in range(i + 1, len(lst)):
-            				if lst[min_index] > lst[j]:
-                				min_index = j
-        			lst[i], lst[min_index] = lst[min_index], lst[i]
-    			return lst
+
+	def selection_sort(lst):
+		for i in range(len(lst)):
+        min_index = i
+        for j in range(i + 1, len(lst)):
+            if lst[min_index] > lst[j]:
+                min_index = j
+        lst[i], lst[min_index] = lst[min_index], lst[i]
+    	return lst
+				
 </p>
 
 ### Programming paradigms - procedural
