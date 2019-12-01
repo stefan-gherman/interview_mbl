@@ -33,6 +33,7 @@ list.sort() - sorts the list using Timsort.
 A set is collection of elements that is unordered and does not contain duplicates. A list, on the other hand, is ordered and can
 contain duplicates 
 </p>
+
 #### What is the purpose and methods of a dictionary/map data structure?
 <p>
 A dictionary is the Python implementation of a hashtable. It contains keys each with an associated value. They are also dynamic and
@@ -52,11 +53,12 @@ dict.items() - returns a list of key-value pairs in a dictionary.
 </li>
 </ul>
 </p>
+
 ### Algorithms
 
 #### Fibonacci sequences. Write a method (or pseudo code), that generates the Fibonacci sequences.
 <p>
-<code>
+
 		def fibo(elements):
     			fib_list = []
     			fib_list.extend([0, 1])
@@ -65,8 +67,9 @@ dict.items() - returns a list of key-value pairs in a dictionary.
         			fib_list.append(fib_list[count] + fib_list[count - 1])
        				 count += 1
     			return fib_list
-</code>
+
 </p>
+
 #### How do you find a max value in a list/array if you can’t use any built-in functions?
 #### How do you find the average of values in a list/array if you can’t use any built-in functions?
 #### What do we call an *in-place* sort?
