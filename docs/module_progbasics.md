@@ -104,6 +104,8 @@ If any element is smaller than the current one, its index is stored in the <code
 A swap between the current element and the element at the new <code>min_index</code> is made
 </li>
 </ul>
+</p>
+
 <p>
 		def selection_sort(lst):
 			for i in range(len(lst)):
@@ -113,7 +115,6 @@ A swap between the current element and the element at the new <code>min_index</c
                 				min_index = j
         			lst[i], lst[min_index] = lst[min_index], lst[i]
     			return lst
-</p>
 </p>
 
 ### Programming paradigms - procedural
