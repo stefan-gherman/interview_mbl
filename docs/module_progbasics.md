@@ -71,9 +71,50 @@ dict.items() - returns a list of key-value pairs in a dictionary.
 </p>
 
 #### How do you find a max value in a list/array if you can’t use any built-in functions?
+<p>
+You assign to max the first value in the list. Then you iterate over the list from the second element onwards, 
+if max is smaller than any of the elements you assign to max that value 
+</p>
+
 #### How do you find the average of values in a list/array if you can’t use any built-in functions?
+<p>
+You divide the sum of all elements in the list by the number of elements in the list.
+</p>
+
 #### What do we call an *in-place* sort?
+<p>
+An in-place sort is a sorting algorithm that does not use extra space to sort the list. It only modifies the order of the
+elements. Examples are Selection Sort and Insertion Sort
+</p>
+
 #### Explain an algorithm which sorts a list!
+<p>
+Selection Sort
+<ul>
+<li>
+Two loops are necessary to sort the list. One that starts from the begining and another that starts from the closest neighbour of the current element
+</li>
+<li>
+<code>min_index</code> gets assigned to the index of the current element
+</li>
+<li>
+If any element is smaller than the current one, its index is stored in the <code>min_index</code> variable
+</li>
+<li>
+A swap between the current element and the element at the new <code>min_index</code> is made
+</li>
+</ul>
+<p>
+		def selection_sort(lst):
+			for i in range(len(lst)):
+        			min_index = i
+        			for j in range(i + 1, len(lst)):
+            				if lst[min_index] > lst[j]:
+                				min_index = j
+        			lst[i], lst[min_index] = lst[min_index], lst[i]
+    			return lst
+</p>
+</p>
 
 ### Programming paradigms - procedural
 
