@@ -375,6 +375,7 @@ When the stack reaches its maximum storage memory capacity, an error is thrown. 
 <p>
 	An atomic commit revolves around a commit that changes a single thing. Descriptive commit messages are messages the convey what the commit message is about in a compact form.
 </p>
+
 #### What’s the difference between git and GitHub?
 <p>
 	git is a software whereas GitHub is an online platform used to store your repos.
