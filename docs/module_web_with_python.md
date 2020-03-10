@@ -451,11 +451,39 @@ JOIN(data from both tables is displayed if a match is found), LEFT/RIGHT JOIN (d
 ### Javascript
 
 #### What is javascript?
+<p>
+    A programming language used mainly on the web
+</p>
+
 #### When to use AJAX? Bring examples of its usage.
+
+<p>
+    AJAX may be used when fetching something from an api endpoint, or from a local database.
+</p>
+
 #### What is DOM and how to manipulate it from Javascript?
+<p>
+    The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
+</p>
+
+<code>
+    document.getElementByID('id1').setAttribute('title', 'New Title')
+</code>
+
 #### What are events and how/why to use them in Javascript?
+<p>
+Events are a part of the Document Object Model (DOM) Level 3 and every HTML element contains a set of events which can trigger JavaScript Code.
+</p>
+
 #### What is event bubbling/capturing? How would you use it?
+<p>
+    When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors. It may used when certain elements trigger the same event on the parent.
+</p>
+
 #### What is JSON and how do we use it?
+<p>
+    JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It may be used when exchanging data with a server, api, .etc
+</p>
 
 ## Software engineering
 
