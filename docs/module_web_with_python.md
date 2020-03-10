@@ -305,16 +305,62 @@ Database Connection, password hashing, queries, routing.
 ### SQL
 
 #### How can you connect your application to a database server? What are the possible ways?
+<p>
+    Via \connect command from psql, from the ui of PyCharm, or with the use of a function.
+</p>
+
 #### When do you use the DISTINCT keyword in SQL?
+<p>
+    You may use DISTINCT when data from a query repeats itself, ex: array_agg(DISTINCT names.first_name)
+</p>
+
 #### What are aggregate functions in SQL? Give 3 examples.
+<p>
+    An aggregate function performs a calculation on a set of values, and returns a single value ,ex: SUM, AVG, COUNT
+</p>
+
 #### What kind of JOIN types do you know in SQL? Could you give examples?
+<p>
+JOIN(data from both tables is displayed if a match is found), LEFT/RIGHT JOIN (data from one table is displayed regardless if a match is found in the other table.)
+</p>
+
 #### What are the constraints in sql?
+<p>
+    Rules applied to table data.
+</p>
+
 #### What is a cursor in SQL? Why would you use one?
+<p>
+    A database cursor is an object that enables traversal over the rows of a result set. It allows you to process individual row returned by a query.
+</p>
+
 #### What are database indexes? When to use?
+
+<p>
+    Indexes are special lookup tables that the database search engine can use to speed up data retrieval. Simply put, an index is a pointer to data in a table. An index in a database is very similar to an index in the back of a book.
+</p>
+
 #### What are database transactions? When to use?
+<p>
+    A transaction is a unit of work that is performed against a database. Transactions are units or sequences of work accomplished in a logical order, whether in a manual fashion by a user or automatically by some sort of a database program.
+</p>
+
 #### What kind of database relations do you know? How to define them?
+<p>
+    1:1, 1:Many, Many:Many
+</p>
+
 #### You have a table with an “address” field which contains data like “3525, Miskolc, Régiposta 9.” (postcode, city, street name and address). How would you query all records related to Miskolc?
+<code>
+    SELECT *
+    FROM address
+    WHERE city = 'Miskolc';
+</code>
+
 #### How would you keep track of what kind of data has changed after an UPDATE or DELETE operation in a table?
+<p>
+    Implementing a log system or having a separate table where you store changes.
+</p>
 
 ### HTML & CSS
 
