@@ -524,18 +524,82 @@ Events are a part of the Document Object Model (DOM) Level 3 and every HTML elem
 ### Networks
 
 #### What kind of HTTP status codes do you know?
-#### What is a API?
+<ul>
+<li>200 - OK</li>
+<li>404 - NOT FOUND</li>
+<li>500 - INTERNAL SERVER ERROR</li>
+</ul>
+
+#### What is an API?
+<p>
+    An application program interface (API) is a set of routines, protocols, and tools for building software applications. Basically, an API specifies how software components should interact.
+</p>
+
 #### What is REST API?
+
+<p>
+    REST is acronym for REpresentational State Transfer. It is architectural style for distributed hypermedia systems and was first presented by Roy Fielding in 2000 in his famous dissertation.
+</p>
+
 #### What is JSON? When to use?
+
+<p>
+  JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It may be used when exchanging data with a server, api, .etc  
+</p>
+
 #### What is TCP/IP? What layers does it define, what are they responsible for?
+<p>
+    TCP/IP stands for Transmission Control Protocol/Internet Protocol. TCP/IP is a set of standardized rules that allow computers to communicate on a network such as the internet.
+</p>
+
+<p>
+It contains 4 layers:
+
+Process/Application Layer
+Host-to-Host/Transport Layer
+Internet Layer
+Network Access/Link Layer
+</p>
+
 #### What’s the difference between TCP and UDP?
+<p>
+Transmission Control Protocol (TCP) is a connection-oriented protocol that computers use to communicate over the internet. It is one of the main protocols in TCP/IP networks. TCP provides error-checking and guarantees delivery of data and that packets will be delivered in the order they were sent.
+
+User Datagram Protocol (UDP) is a connectionless protocol that works just like TCP but assumes that error-checking and recovery services are not required. Instead, UDP continuously sends datagrams to the recipient whether they receive them or not.
+</p>
+
 #### How does an HTTP Request look like? What are the most relevant HTTP header fields?
-#### How does an HTTP Response look like? What are the most relevant HTTP header fields?
+
+<p>
+    An HTTP request is one case of a general HTTP message (the HTTP response being the other), which consists of:
+    A start line, terminated by a carriage return-line feed (CRLF) pair.
+    Optionally, one or more header lines, each terminated by a CRLF pair.
+    A blank line (a CRLF pair by itself).
+    Optionally, a message body.
+</p>
+
 #### What is DNS? How does it work?
+<p>
+    (Domain Name System) The Internet's system for converting alphabetic names into numeric IP addresses.
+
+    The process of DNS resolution involves converting a hostname (such as www.example.com) into a computer-friendly IP address (such as 192.168.1.1). An IP address is given to each device on the Internet,
+</p>
+
 #### What is a web server?
+<p>
+     A web server is a computer that stores web server software and a website's component files (e.g. HTML documents, images, CSS stylesheets, and JavaScript files). It is connected to the Internet and supports physical data interchange with other devices connected to the web.
+</p>
+
 #### Explain the client-server architecture.
+<p>
+    Client-server architecture is an architecture of a computer network in which many clients (remote processors) request and receive service from a centralized server (host computer). Client computers provide an interface to allow a computer user to request services of the server and to display the results the server returns. Servers wait for requests to arrive from clients and then respond to them. Ideally, a server provides a standardized transparent interface to clients so that clients need not be aware of the specifics of the system (i.e., the hardware and software) that is providing the service
+</p>
+
 #### What would you use a session for?
+<p> For user registration or loging in.</p>
+
 #### What would you use a cookie for?
+<p> To store user preferences </p>
 
 ## Software Development Methodologies
 
