@@ -119,6 +119,8 @@ Now, whereas encryption is meant to protect data in transit, hashing is meant to
 </p>
 
 #### What is BubbleSort? Describe the main logic of this sorting algorithm.
+<p>Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.</p>
+
 #### Explain the process of finding the maximum and minimum value in a list of numbers!\
 
         minimum:
@@ -148,7 +150,23 @@ The sum of all the numbers in the array is divided by the length of the array.
 </p>
 
 #### What is Big O complexity? Explain time and space complexity!
+
+<p>
+Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario, and can be used to describe the execution time required or the space used (e.g. in memory or on disk) by an algorithm.
+</p>
+
+<p>
+Time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input.
+</p>
+
+<p>
+Space complexity of an algorithm quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input.
+</p>
+
 #### Explain the process of calculating the average value in a linked list of numbers!
+<p>
+    The process is similar to the one for an array.
+</p>
 
 ### Procedural
 #### How the CASE condition works in SQL?
