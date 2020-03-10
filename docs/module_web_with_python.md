@@ -365,6 +365,17 @@ JOIN(data from both tables is displayed if a match is found), LEFT/RIGHT JOIN (d
 ### HTML & CSS
 
 #### What’s the difference between XML, XHTML and HTML?
+<p>
+    HTML is the HyperText Markup Language, which is designed to create structured documents and provide for semantic meaning behind the documents. HTML5 is the next version of the HTML specification.
+</p>
+<p>
+    XML is the Extensible Markup Language, which provides rules for creating, structuring, and encoding documents. You often see XML being used to store data and to allow for communication between applications. It's programming language-agnostic - all of the major programming languages provide mechanisms for reading and writing XML documents, either as part of the core or in external libraries.
+</p>
+
+<p>
+    XHTML is an XML-based HTML. It serves the same function as HTML, but with the same rules as XML documents. These rules deal with the structure of the markup.
+</p>
+
 #### How to include a JavaScript file in a webpage?
 
 <p>
@@ -379,14 +390,63 @@ JOIN(data from both tables is displayed if a match is found), LEFT/RIGHT JOIN (d
 </p>
 
 #### How to select an element using its id in CSS?
+<code>
+    elem #id
+</code>
+
 #### How to select elements using their class in CSS?
+<code>
+    elem .class
+</code>
+
 #### How to select elements which have the ‘alpha’ and ‘beta’ classes in CSS?
+
+<code>
+    .alpha.beta
+</code>
+
 #### How to select all list items in all ordered lists on the page in CSS?
+<code>
+ ol li {}
+ </code>
+
 #### How to select elements using their attributes in CSS?
+<code>element[attribute = 'value'] </code>
+
 #### What are UX and UI?
+ <p>
+  UX - the way user interracts with the application, its ease of use, responsiveness
+ </p>
+ 
+ <p>
+    UI - the way the app looks and feels.
+ </p>
+
 #### Please list some points that an application should fulfill to have good UX.
+<p>
+ Use menus for navigation, add buttons with clear concise text of what their purpose is.
+</p>
+
 #### What is XML, XSLT, DTD?
+<p>
+    XSL (eXtensible Stylesheet Language) is a styling language for XML.
+</p>
+    
+<p>
+    A DTD is a Document Type Definition.
+
+    A DTD defines the structure and the legal elements and attributes of an XML document.
+</p>
+
+
 #### What is the difference between HTML and XML?
+<p>
+       HTML is the HyperText Markup Language, which is designed to create structured documents and provide for semantic meaning behind the documents. HTML5 is the next version of the HTML specification.
+</p>
+
+<p>
+     XML is the Extensible Markup Language, which provides rules for creating, structuring, and encoding documents. You often see XML being used to store data and to allow for communication between applications. It's programming language-agnostic - all of the major programming languages provide mechanisms for reading and writing XML documents, either as part of the core or in external libraries.
+</p>
 
 ### Javascript
 
