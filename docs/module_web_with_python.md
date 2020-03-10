@@ -222,23 +222,83 @@ Global variables are available from within any scope, global and local.
 #### How to import a function from another module in JavaScript?
 <p>First the function must have the export keyword typed before declaration.</p>
 <code>
-    import {fumctionName} from 'module.js';
+    import {fumctionName} from 'module.js'
 </code>
 
 ### Functional
 #### What is recursion?
+<p>
+    The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as recursive function. 
+</p>
+
 #### Write a recursive function which calculates the Fibonacci numbers!
+
+<code>
+    def fibonacci(n):
+        if n < 0:
+            ValueError("Input 0 or greater only!")
+        if n <= 1:
+            return n
+        return fibonacci(n - 1) + fibonacci(n - 2)
+</code>
+
 #### How to store a function in a variable in Python?
+<code>
+    def return_num(num):
+        return num
+    a = return_num    
+</code>
+
 #### List the ways of defining a callable logical unit in JavaScript!
+<ul>
+<li>arrow function</li>
+<li> const + arrow function </li>
+<li>function name</li>
+</ul>
+
 #### What is an event listener? How to attach one?
+
+<p>
+    An event listener is a procedure in JavaScript that waits for an event to occur.
+</p>
+
+<code>
+    const playButton = document.getElementByID('startButton');
+    play.addEventListener('click', function(){
+        //some logic
+    });
+</code>
+
 #### How to trigger an event in JavaScript?
 <p>
 By acting upon the element that has the event listener attached to it with the corresponding key or mouse event.
 </p>
 
 #### What is a callback function? Tell some examples of its usage.
+
+<p>
+A callback is a function that is to be executed after another function has finished executing.
+</p>
+
+<p>A callback may be used on an event listener or on a window function such as setTimeout()</p>
+
 #### What is a Python decorator? How does it work? Tell some examples of its usage.
+    
+<p>
+    Decorators allow us to wrap another function in order to extend the behavior of wrapped function, without permanently modifying it.
+</p>
+
+<p>
+In Decorators, functions are taken as the argument into another function and then called inside the wrapper function.
+</p>
+<p>
+Database Connection, password hashing, queries, routing.  
+</p>
+
 #### What is the difference between synchronous and asynchronous execution?
+<p>
+    When you execute something synchronously, you wait for it to finish before moving on to another task. When you execute something asynchronously, you can move on to another task before it finishes.
+</p>
 
 ## Programming languages
 
