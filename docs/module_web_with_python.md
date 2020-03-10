@@ -433,9 +433,8 @@ JOIN(data from both tables is displayed if a match is found), LEFT/RIGHT JOIN (d
 </p>
     
 <p>
-    A DTD is a Document Type Definition.
-
-    A DTD defines the structure and the legal elements and attributes of an XML document.
+A DTD is a Document Type Definition.
+A DTD defines the structure and the legal elements and attributes of an XML document.
 </p>
 
 
@@ -580,9 +579,8 @@ User Datagram Protocol (UDP) is a connectionless protocol that works just like T
 
 #### What is DNS? How does it work?
 <p>
-    (Domain Name System) The Internet's system for converting alphabetic names into numeric IP addresses.
-
-    The process of DNS resolution involves converting a hostname (such as www.example.com) into a computer-friendly IP address (such as 192.168.1.1). An IP address is given to each device on the Internet,
+(Domain Name System) The Internet's system for converting alphabetic names into numeric IP addresses.
+The process of DNS resolution involves converting a hostname (such as www.example.com) into a computer-friendly IP address (such as 192.168.1.1). An IP address is given to each device on the Internet,
 </p>
 
 #### What is a web server?
@@ -604,8 +602,43 @@ User Datagram Protocol (UDP) is a connectionless protocol that works just like T
 ## Software Development Methodologies
 
 #### What kind of software development methodologies do you know? What are the main features of these?
+<p>
+ Waterfall: The waterfall method is a rigid linear model that consists of sequential phases (requirements, design, implementation, verification, maintenance) focusing on distinct goals. Each phase must be 100% complete before the next phase can start. There’s usually no process for going back to modify the project or direction.
+</p>
+<p>
+    Agile: Teams use the agile development methodology to minimize risk (such as bugs, cost overruns, and changing requirements) when adding new functionality. In all agile methods, teams develop the software in iterations that contain mini-increments of the new functionality.
+</p>
+
 #### What are the SCRUM roles?
+<ul>
+<li>Product Owner</li>
+<li>Scrum Master</li>
+<li>Delivery Team Member</li>
+</ul>
+
 #### What are the SCRUM ceremonies?
+
+<p>
+    Scrum ceremonies are meetings that are unique to scrum teams. Scrum ceremonies ensure that everyone (the scrum master, product owner and development team) is in-sync.
+</p>
+
 #### What are the SCRUM artifacts?
+<ul>
+<li>Product Vision</li>
+<li>Sprint Goal</li>
+<li>Product Backlog</li>
+<li>Sprint Backlog</li>
+<li>Definition of Done</li>
+<li>Burn-Down Chart</li>
+<li>Increment</li>
+<li>Burn-Down Chart</li>
+</ul>
+
 #### What is the main goal of a retrospective meeting?
+<p>To asses what went wrong, what went well, what could be improved.</p>
+
 #### Explain, when would you recommend to use the waterfall methodology?
+
+<p>
+    When the requirements are clear, they are not subject to any changes, and at any point there will be no need to go back to a previous step.
+</p>
