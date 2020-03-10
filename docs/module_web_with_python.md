@@ -490,16 +490,36 @@ Events are a part of the Document Object Model (DOM) Level 3 and every HTML elem
 ### Version control
 
 #### What type of branching strategy would you use?
+<p>Git Flow </p>
+
 #### What would you do if you find a bug on the production code (master branch)?
+<p> You open a branch derived from master, fix the bug the merge, rebase the branch back into the master branch</p>
+
 #### How can you move changes from one branch to another in GIT?
+<p>Commits can be moved with rebase</p>
+
 #### How does a VCS help with code reviews?
+<p>You can see what changed at all points during development</p>
+
 #### What is your favorite git command? Why?
+<p>git checkout -b branch_name because it creates and checks out a new branch at the same time.</p>
+
 #### What does remote/local mean in Git? 
+<p>
+    remote is a branch stored on a server, while local is a copy of that branch stored on your machine.
+</p>
 
 ### DevOps
 
 #### Why is it good to use a package manager software?
+<p>
+    You get the latest updates, notifications and latest stable releases
+</p>
+
 #### Why is it good to use a virtual environment for a project?
+<p> 
+    Because it is better to use package versions for that specific project rather than the global version 
+</p>
 
 ### Networks
 
