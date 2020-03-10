@@ -186,12 +186,44 @@ With multiple elif statements.
 </p>
 
 #### Explain variable scoping in Python!
+<p>
+    A variable created inside a function belongs to the local scope of that function, and can only be used inside that function.
+</p>
+
+<p>
+    A variable created in the main body of the Python code is a global variable and belongs to the global scope.
+
+Global variables are available from within any scope, global and local.
+</p>
+
 #### What’s the difference between const and var in JavaScript?
+<p>var declarations are globally scoped or function/locally scoped, can be redeclared and updated, while const (introduced in ES6) are only block scoped and can't be updated and redeclared. Also const must be initialized after it is declared.</p>
+
 #### How the list comprehension looks like in Python?
+<p>
+    [ expression for item in list if conditional ]
+</p>
+
 #### How the “ternary expression” looks like in Python?
+<code>
+    min = a if a < b else b 
+</code>
+
 #### How the ternary expression looks like in JavaScript?
+<code>
+    a === 3 ? a = 4 : a= 5;
+</code>
+
 #### How to import a function from another module in Python?
+<code>
+    import function_name from module
+</code>
+
 #### How to import a function from another module in JavaScript?
+<p>First the function must have the export keyword typed before declaration.</p>
+<code>
+    import {fumctionName} from 'module.js';
+</code>
 
 ### Functional
 #### What is recursion?
