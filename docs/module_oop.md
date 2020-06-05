@@ -6,6 +6,8 @@
 
 #### What does 'fail fast' mean in terms of exception handling? Why is it a good practice?
 
+<p>Fail fast means that the exceprion is detected and the subsequent program is stopped before it can cause any damage. It is a good practice because the damage is reduced.</p>
+
 ## Computer Science
 
 ### Data structures
@@ -15,6 +17,10 @@
 #### What is a linked list? How to find if a linked list has a loop?
 #### What is the Big O time complexity of the common operations in an ArrayList, LinkedList, HashMap? And of a bubble sort, quicksort, finding items in a Binary Search tree?
 #### How does HashMap work?
+<p>
+A HashMap works the same way as a dictionary in Python, it stores key value pairs.
+</p>
+
 #### Why is it important for keys in a map to have an immutable type? (Consider String for example.)
 
 ### Other
@@ -34,6 +40,8 @@
 #### What is an object?
 #### What is a constructor?
 #### Do we require parameter for constructors?
+<p>Not all the time, Java builds no parameter constructors automatically.</p>
+
 #### What is an interface?
 #### What are access modifiers?
 #### What is data hiding?
