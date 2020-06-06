@@ -103,7 +103,24 @@ It is a mechanism that removes unused data from memory in order to free up space
 ### Procedural
 
 #### What is casting? What is the difference between up vs downcasting?
+
+Casting may refer to either:
+
+- typecasting: you assign the value of one primitive datatype to another
+- objectcasting: you turn an object from a particular type into another one'
+
+Upcasting
+
+  - casting a subtype to a supertype, upward to the inheritance tree.
+
+Downcasting
+
+  - casting to a subtype, downward to the inheritance tree.
+
+
 #### Which order should we catch the exceptions? Why?
+
+You must catch the most specific exception first and the more generic ones later, as this approach ensures that no exceptions will be omitted on code execution.
 
 ### Object-oriented
 
