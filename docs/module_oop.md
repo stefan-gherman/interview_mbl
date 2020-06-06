@@ -251,4 +251,11 @@ You must catch the most specific exception first and the more generic ones later
 ### Database
 
 #### How can you connect your application to a database server? What are the possible ways?
+
+You may use a driver ( JDBC Postgres driver) that facilitates the connection between your persistance layer and the database
+
 #### What do you know about database normalization?
+
+Normalization is a technique that organizes the database in such a way as to reduce redundancy and dependeny of data, by dividing larger tables into smaller tables and using relationships to link them
+
+
