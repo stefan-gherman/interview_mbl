@@ -6,26 +6,97 @@
 
 #### What does 'fail fast' mean in terms of exception handling? Why is it a good practice?
 
-<p>Fail fast means that the exceprion is detected and the subsequent program is stopped before it can cause any damage. It is a good practice because the damage is reduced.</p>
+  Fail fast means that the exceprion is detected and the subsequent program is stopped before it can cause any damage. It is a good practice because the damage is reduced.
 
 ## Computer Science
 
 ### Data structures
 
 #### How to find the middle element of singly linked list in O(n)?
+
+  First you need to find the size, afterwards you iterate through it until you reach the element at position: size/2
+
 #### Given an array of integers going from 1 to 100 (both inclusive) there is a duplicated entry. How to find it?
+
+You use either a set(it does not support duplicates) or a Map that acts as a frequency map, if the map already contains that value, you raise an error or do something similar
+
+    List<Integer> intList = new ArrayList();
+            for (int i = 0; i < 100 ; i ++) {
+            intList.add(i);
+        }
+
+        for (int i = 12; i< 25; i++) {
+          intList.add(i);
+        }
+
+        intList.add(12);
+        for(int num : intList) {
+          System.out.println(num);
+        }
+        Map<Integer, Integer> duplicateMap = new HashMap<>();
+
+        for(int num : intList) {
+          if(duplicateMap.containsKey(num)) {
+            System.out.print("Duplicate " + num);
+            return;
+          } else {
+            duplicateMap.put(num, 1);
+          }
+        }
+
 #### What is a linked list? How to find if a linked list has a loop?
+
+ A linked list is a data structure where each node contains data and a pointer to the next node(singly linked) or also to the previous node (doubly linked).
+
+ To detect a loop you may traverse the list and add node to a set. If the set already contains a node, it means there is a loop.
+
 #### What is the Big O time complexity of the common operations in an ArrayList, LinkedList, HashMap? And of a bubble sort, quicksort, finding items in a Binary Search tree?
+
+Array List
+
+- get => O(1);
+- add => O(1) best case, O(n) worst case because of potential array resizing;
+- remove => O(n)
+
+LinkedList
+
+- get => O(n), O(1) when getting first or last items as it stores pointers for its head and tail.
+- add => O(n), O(1) for first or last since there are built-in methods to add at he begininnig or at the end.
+- remove => O(n), O(1) for first or last elements.
+
+HashMap
+
+- get => O(1) best case, O(n) worst case in case of good hashcode implementation
+- add => O(1) best case, O(n) worst case in case of good hashcode implementation
+- delete => O(1) best case, O(n) worst case in case of good hashcode implementation
+
+BubbleSort
+
+- best case: O(n)
+- worst case: O(n^2)
+  
+QuickSort
+
+- best case: O(n log n)
+- worst case: O(n^2)
+
+BST Search
+
+- O(n) where n is the heigth of the tree
+  
 #### How does HashMap work?
-<p>
+
 A HashMap works the same way as a dictionary in Python, it stores key value pairs.
-</p>
 
 #### Why is it important for keys in a map to have an immutable type? (Consider String for example.)
+
+If immutable, the object's hashcode wont change and it allows caching the hashcode of different keys which makes the overall retrieval process very fast.
 
 ### Other
 
 #### What is a garbage collector, in a nutshell?
+
+It is a mechanism that removes unused data from memory in order to free up space
 
 ## Programming paradigms
 
@@ -40,7 +111,7 @@ A HashMap works the same way as a dictionary in Python, it stores key value pair
 #### What is an object?
 #### What is a constructor?
 #### Do we require parameter for constructors?
-<p>Not all the time, Java builds no parameter constructors automatically.</p>
+<p>Not all the time, Java builds no parameter constructors automatically.</It>
 
 #### What is an interface?
 #### What are access modifiers?
