@@ -125,34 +125,146 @@ You must catch the most specific exception first and the more generic ones later
 ### Object-oriented
 
 #### What is a class?
+
+A class is a blueprint usually representing a real life objects from which objects are created, made of fields and method.
+
 #### What is an object?
+
+An object is the instance of a class.
+
 #### What is a constructor?
+
+A method that creates objects of a certain class type.
 #### Do we require parameter for constructors?
-<p>Not all the time, Java builds no parameter constructors automatically.</It>
+
+Not all the time, Java builds no parameter constructors automatically.
 
 #### What is an interface?
+
+Interface generally defines the set of methods (or messages) that an instance of a class that has that interface could respond to. 
+
 #### What are access modifiers?
+
+They are keywords that restrict the scope of a field, class, method, etc.
+
 #### What is data hiding?
+
+Data hiding is the process in which  the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class.
+
 #### Can a static method use non-static members?
+
+They can use them only with object reference.
+
+
 #### What is the difference between hiding a static method and overriding an instance method?
+
+Overiding
+ 
+ - it's decided at run time which method will be called. It is for non-static methods.
+
+Hiding
+ - is for all other members (static methods, instance members, static members), he method or member to be called or used is decided during compile time. 
+
+
 #### Define the following terms: Instantiation, Attribute, Method
+
+Instantiation
+ - the process of creating a new object of a certain class
+
+Attribute
+ - class variables or fields that store data.
+
+Method
+ - a block of a code that runs when called and performs a specific task
+
+
 #### Could we access a static variable (or method) from a non-static method? Why?
+
+Instance methods can access class variables and class methods directly.
+ 
+
 #### Could we access a non-static variable (or method) from a static method? Why?
+
+Non-static variables cannot be accessed from a static context without a refference.
+
+
+
 #### How many instances you have of a static variable of a given class?
+
+Only one that persists among all the instances of that class.
+
+
 #### Why is it not a good practice to write a lot of static methods?
+
+They are basically global variables and their number and usage should be kept at minimum.
+
 #### What are the features of static attributes and static methods of a class? What are the benefits, when to use them?
+
+They do not need an instance of the class, they are useful for something like a singleton.
+
 #### What is the ‘this’ reference?
+
+'this' is a reference to the current object 
+
+
 #### What are base class, subclass and superclass?
+A class that is derived from another class is called a subclass. The class from which the subclass is derived is called a superclass (also a base class or a parent class).
+
 #### Draw an object oriented family (as entities, with relations) on the whiteboard.
+
+![UML](/docs/assets/images/pic.png)
+
+
 #### Difference between overloading and overriding?
+
+Overloading
+
+- is a feature that allows a class to have more than one method having the same name, if their argument lists are different.
+  
+
+Overididng
+ 
+ - declaring a method in sub class which is already present in parent class is known as method overriding. Overriding is done so that a child class can give its own implementation to a method which is already provided by the parent class.
+
+Overloading happens at compile-time while Overriding happens at runtime: The binding of overloaded method call to its definition has happens at compile-time however binding of overridden method call to its definition happens at runtime.
+
 #### What are the Object Oriented Principles? Explain the concepts with realistic examples!
+
+- Encapsulation
+   - is the mechanism of hiding of data implementation by restricting access to public methods. Instance variables are kept private and accessor methods are made public to achieve this. Ex: keeping sensitive data private. 
+- Abstraction 
+  - abstraction is to hide information that is not relevant to context or rather show only relevant information. Ex: when you drive car, you don't need to know how a diesel engine works but rather how to interact with it
+- Polymorphism 
+  - polymorphism gives a way to use a class exactly like its parent so there’s no confusion with mixing types but each child class keeps its own methods as they are. Java Collections
+- Inheritance
+  - expresses “is-a” and/or “has-a” relationship between two objects, using Inheritance, in derived classes we can reuse the code of existing super classes. Ex: A parent class animal can have multiple subclasses for different types of animals
+  
 #### What is method overloading?
+
+Is a feature that allows a class to have more than one method having the same name, if their argument lists are different.
+
 #### What is method overriding?
+
+Declaring a method in sub class which is already present in parent class is known as method overriding.
+
 #### Explain how object oriented languages attempt to simplify memory management for Programmers.
+Memory Management is being aided by automatic Garbage collecting.
+
 #### Explain the “Single Responsibility” principle!
+Every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
+
 #### What is an object oriented program? Explain, show.
+It is a program that uses classes and objects and has OOP principles applied throughout.
 #### How do you make a class immutable? What do you need to watch out for?
+
+ - Make the class final
+ - Make all fields private
+ - Don't provide setters
+ - Assign values for the fields in the constructor
+ - Return clones in getter methods
+
 #### How many instances can be created for an abstract class?
+Unlimited instances
 
 ## Programming languages
 
@@ -162,7 +274,11 @@ You must catch the most specific exception first and the more generic ones later
 #### If you have a variable, that shall store a positive whole number between 0 and 200, what primitive type would you use to store it?
 #### What is the "golden rule" of variable scoping in Java? What is the lifetime of variables?
 #### What is the purpose of the ‘equals()’ method?
+
+To compare objects.
+
 #### What is the difference between '==' and 'equals()'?
+
 #### What does the ‘static’ keyword mean?
 #### Why is the main() method declared as static? Explain.
 #### What is the default access modifier in a class?
@@ -198,6 +314,8 @@ You must catch the most specific exception first and the more generic ones later
 #### What are “generics”? When to use? Show examples.
 #### What is the benefit of having “generic” containers?
 #### Given two Java programs on two different machines. How can you communicate between the two? What are the possible ways?
+
+  Sockets, HttpServlets, Tunneling.
 #### What is an annotation? What can be annotated and how? Show examples.
 
 ### C&#35;
@@ -252,7 +370,7 @@ You must catch the most specific exception first and the more generic ones later
 
 #### How can you connect your application to a database server? What are the possible ways?
 
-You may use a driver ( JDBC Postgres driver) that facilitates the connection between your persistance layer and the database
+You may use a driver ( JDBC Postgres driver) that facilitates the connection between your persistance layer and the database. For this you may use a singleton or connection pooling.
 
 #### What do you know about database normalization?
 
