@@ -271,52 +271,236 @@ Unlimited instances
 ### Java
 
 #### What is autoboxing and unboxing?
+Autoboxing 
+
+ - Converting a primitive value into an object of the corresponding wrapper class
+  
+        Integer number = 2;
+Unboxing
+- Converting an object of a wrapper type to its corresponding primitive value is called unboxing.
+     
+        Integer number = new Integer(10);
+        int primitiveNumber = number;  
+
 #### If you have a variable, that shall store a positive whole number between 0 and 200, what primitive type would you use to store it?
+
+int 
+
 #### What is the "golden rule" of variable scoping in Java? What is the lifetime of variables?
+
+The golden rule is that static code cannot access non-static members by their simple names. 
+
+Instance Variables
+ - lifetime: as long as the object is present in the memory.
+
+Class Variables
+ - lifetime: while the program runs.
+
+Method Variables
+ - lifetime: while the method runs.
+
+
+
 #### What is the purpose of the ‘equals()’ method?
 
-To compare objects.
+To compare object values.
 
 #### What is the difference between '==' and 'equals()'?
 
+Main difference between .equals() method and == operator is that one is method and other is operator. 
+
+== checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
+
 #### What does the ‘static’ keyword mean?
+
+ static is a non-access modifier
+
 #### Why is the main() method declared as static? Explain.
+
+The static main() method makes it very clear for the JVM to call it for launching the Java Application. If it weren't static the JVM would need a different entry function specified for each Java application. 
+
+Also, there would be ambiguity which constructor should be called.
+
+
 #### What is the default access modifier in a class?
+
+ package-private => it is visible only within its own package 
+
 #### What is the JVM?
+ 
+ The Java Virtual Machine is a program that has two primary functions: to allow Java programs to run on any device or operating system and to optimize memory.
+
 #### What is the difference between the JRE and the JDK?
+
+JRE 
+- The JRE is the Java Runtime Environment. It is a package of everything necessary to run a compiled Java program, including the Java Virtual Machine (JVM), the Java Class Library, the java command, and other infrastructure. However, it cannot be used to create new programs.
+
+JDK
+ - The JDK is the Java Development Kit, the full-featured SDK for Java. It has everything the JRE has, but also the compiler (javac) and tools (like javadoc and jdb). It is capable of creating and compiling programs.
+
 #### What is the difference between long and Long?
+
+Long is a class. long is a primitive.
+
 #### Can a long store bigger numbers than a Long?
+
+No
+
+
 #### What kind of packages do you know under java.util.* ? Bring at least 3 examples.
+
+java.util.List
+
+java.util.ArrayList
+
+java.util.Map
+
 #### What are the access modifiers in Java? Which one could we use for class?
+
+
+  - Default – No keyword required
+  - Private
+  - Protected
+  - Public
+
+  Any of them can be used for a class.
+
 #### Can an “enum” contain methods in Java? Explain.
+
+Yes it can.
+
 #### When would you use a private/protected/public attribute? What is the difference?
+
+- private => encapsulation, accessible only inside the class
+- protected => encapsulation, accesible inside the class and by all children
+- public => pass by reference, accesible from anywhere as long as an object of that class exist in the given scope
+
 #### How do you prevent developers from subclassing a class?
+
+Private constructor and making each method final.
+
 #### How do you prevent developers from overriding a method in a subclass?
+
+Declare method to be final.
+
 #### How do you prevent developers from changing the value of a variable?
+
+Make the variable final.
+
 #### Think about money ;) How would you store a currency value, that shall support decimal parts? Think it through again, and try to think outside of the box!
+
+Use the built in currency class, or build your own ( unadvisable ).
+
+
 #### What happens if you try to call something, that you have no access to, because of data hiding?
+
+You get an error
+
 #### What happens if you try to delete/drop an item from an array, while you are iterating over it?
+
+You get ArrayIndexOutOfBoundsError.
+
 #### What happens if you try to delete/drop/add an item from a List, while you are iterating over it?
+
+You get ConcurrentModificationException.
+
 #### What happens if you try to add an item to the end of an array, while you are iterating over it?
+
+You get ArrayIndexOutOfBoundsError.
+
 #### If you need to access the iterator variable after a for loop, how would you do it?
+
+In order to reuse it, the iterator must be reassigned
+
 #### Which interfaces extend the Collection interface in Java. Which classes?
+
+Interfaces: BeanContext, BeanContextServices, BlockingDeque<E>, BlockingQueue<E>, Deque<E>, List<E>, NavigableSet<E>, Queue<E>, Set<E>, SortedSet<E>, TransferQueue<E>
+
+Classes:     AbstractCollection, AbstractList, AbstractQueue, AbstractSequentialList, AbstractSet, ArrayBlockingQueue, ArrayDeque, ArrayList, AttributeList, BeanContextServicesSupport, BeanContextSupport, ConcurrentHashMap.KeySetView, ConcurrentLinkedDeque, ConcurrentLinkedQueue, ConcurrentSkipListSet, CopyOnWriteArrayList, CopyOnWriteArraySet, DelayQueue, EnumSet, HashSet, JobStateReasons, LinkedBlockingDeque, LinkedBlockingQueue, LinkedHashSet, LinkedList, LinkedTransferQueue, PriorityBlockingQueue, PriorityQueue, RoleList, RoleUnresolvedList, Stack, SynchronousQueue, TreeSet, Vector
+
 #### What is the connection between equals() and hashCode()? How are they used in HashMap?
+
+The contract between equals() and hashCode() is: If two objects are equal, then they must have the same hash code. If two objects have the same hash code, they may or may not be equal. The idea behind a Map is to be able to find an object faster than a linear search.
+
 #### What is the difference between checked exceptions and unchecked exceptions? Could you bring example for each?
+
+Checked: are the exceptions that are checked at compile time. If some code within a method throws a checked exception, then the method must either handle the exception or it must specify the exception using throws keyword. Ex: FileNotFoundException.
+
+Unchecked are the exceptions that are not checked at compiled time. In Java exceptions under Error and RuntimeException classes are unchecked exceptions, everything else under throwable is checked.
+
 #### What is Error in Java and how does it relate to Exception?
+
+Both Errors and Exceptions are the subclasses of java.lang.Throwable class.
+
+Errors are the conditions which cannot get recovered by any handling techniques. It surely cause termination of the program abnormally. Errors belong to unchecked type and mostly occur at runtime.
+
+
+Exceptions are the conditions that occur at runtime and may cause the termination of program. But they are recoverable using try, catch and throw keywords.
+
 #### When does 'finally' block run? What it is used for? Could you give an example from your projects when you would use 'finally'?
+
+finally is used after a try-catch block and executes regardless, an example would be the database querying
+
 #### What is the largest number you can work with in Java?
-#### When you use method overriding, can you change the access level of the method, from protected to public? Why?When you use method overriding, can you change the access level of the method, from public to protected? Why?
+
+ BigInteger can grow as large as your ram.
+
+
+#### When you use method overriding, can you change the access level of the method, from protected to public? Why?
+
+A sub-class can always widen the access modifier, because it is still a valid substitution for the super-class.
+
 #### Can the main method be overridden? Explain your answer!
+
+No, we cannot override main method of java because a static method cannot be overridden.
+
 #### When you use method overriding, can you throw fewer exceptions in the subclass than in the parent class? Why?
+
+If SuperClass declares an exception, then the SubClass can declare without exception. Overiding
+
 #### When you use method overriding, can you throw more exceptions in the subclass than in the parent class? Why?
+
+f SuperClass declares an exception, then the SubClass can only declare the child exceptions of the exception declared by the SuperClass, but not any other exception.
+
 #### What does "final" mean in case of a variable, method or a class?
+
+That the the said entity can't be modified
+
 #### What is the super keyword?
+
+The super keyword in Java is a reference variable which is used to refer immediate parent class object. 
+
+
 #### What are “generics”? When to use? Show examples.
+
+Java Generic methods and generic classes enable programmers to specify, with a single method declaration, a set of related methods, or with a single class declaration, a set of related types, respectively.
+
+Generics also provide compile-time type safety that allows programmers to catch invalid types at compile time
+
+    public static < E > void printArray( E[] inputArray ) {
+      for(E element : inputArray) {
+         System.out.println (element);
+
+
 #### What is the benefit of having “generic” containers?
+
+We might write a generic method for sorting an array of objects, then invoke the generic method with Integer arrays, Double arrays, String arrays and so on, to sort the array elements.
+
 #### Given two Java programs on two different machines. How can you communicate between the two? What are the possible ways?
 
   Sockets, HttpServlets, Tunneling.
+
 #### What is an annotation? What can be annotated and how? Show examples.
+
+Annotations are used to provide supplement information about a program. 
+
+Annotations help to associate metadata (information) to the program elements i.e. instance variables, constructors, methods, classes, etc.
+
+    @Override
+    public String toString() {
+      return "";
+    }
+
 
 ### C&#35;
 
