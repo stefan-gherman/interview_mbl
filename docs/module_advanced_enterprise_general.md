@@ -76,9 +76,43 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
 ### Threaded programming
 
 #### When do you need to use threads in an application?
+When an application needs do do multiple things at once like fetching data from a server and keeping the ui active, or when timers or other clocked events are used.
 #### What is a daemon thread?
+Daemon thread is a low priority thread (in context of JVM) that runs in background to perform tasks such as garbage collection (gc) etc.
 #### What is the difference between concurrent and parallel execution of code?
+A system is said to be concurrent if it can support two or more actions in progress at the same time. A system is said to be parallel if it can support two or more actions executing simultaneously.
+
+Concurrency means executing multiple tasks at the same time but not necessarily simultaneously. There are two tasks executing concurrently, but those are run in a 1-core CPU, so the CPU will decide to run a task first and then the other task or run half a task and half another task, etc. Two tasks can start, run, and complete in overlapping time periods i.e Task-2 can start even before Task-1 gets completed. It all depends on the system architecture.
+
+Parallelism means that an application splits its tasks up into smaller subtasks which can be processed in parallel, for instance on multiple CPUs at the exact same time.
+
 #### What is the most important problem developers are faced when using threads?
+Thread synchronization
 #### In what kind of situations can deadlocks occur?
+In an operating system, a deadlock occurs when a process or thread enters a waiting state because a requested system resource is held by another waiting process, which in turn is waiting for another resource held by another waiting process.
+
+A deadlock occurs when
+
+- A limited number of a particular resource.
+- The ability to hold one resource and request another.
+- No preemption capability - this means that one thread can't force another thread to release a lock.
+- A circular wait condition - This means that there is a cycle of threads, each of which is waiting for the next to release a resource before it can continue.
 #### What are possible ways to prevent deadlocks from occurring?
+Deadlocks can be avoided by avoiding at least one of the four conditions, because all this four conditions are required simultaneously to cause deadlock.
+
+- Mutual Exclusion
+Resources shared such as read-only files do not lead to deadlocks but resources, such as printers and tape drives, requires exclusive access by a single process.
+
+- Hold and Wait
+In this condition processes must be prevented from holding one or more resources while simultaneously waiting for one or more others.
+
+- No Preemption
+Preemption of process resource allocations can avoid the condition of deadlocks, where ever possible.
+
+- Circular Wait
+Circular wait can be avoided if we number all resources, and require that processes request resources only in strictly increasing(or decreasing) order.
 #### What does critical section or critical region mean in the context of concurrent programming?
+
+- When more than one processes access a same code segment that segment is known as critical section. Critical section contains shared variables or resources which are needed to be synchronized to maintain consistency of data variable.
+- In simple terms a critical section is group of instructions/statements or region of code that need to be executed atomically such as accessing a resource (file, input or output port, global data, etc.).
+- In concurrent programming, if one thread tries to change the value of shared data at the same time as another thread tries to read the value (i.e. data race across threads), the result is unpredictable.
