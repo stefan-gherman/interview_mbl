@@ -5,15 +5,45 @@
 ### Architectures
 
 #### What is n-tier (or multi-tier) architecture?
+N-tier architecture is also called multi-tier architecture because the software is engineered to have the processing, data management, and presentation functions physically and logically separated.  That means that these different functions are hosted on several machines or clusters, ensuring that services are provided without resources being shared and, as such, these services are delivered at top capacity.  The “N” in the name n-tier architecture refers to any number from 1.
 #### What are microservices? Advantages and disadvantages?
+Microservices are a popular software design architecture that breaks apart monolithic systems. Applications are built as collections of loosely coupled services. Each microservice is responsible for a single feature. They interact with each other through communication protocols such as HTTP and TCP.
+
+The biggest pro of microservices architecture is that teams can develop, maintain, and deploy each microservice independently. This kind of single-responsibility leads to other benefits as well. Applications composed of microservices scale better, as you can scale them separately, whenever it’s necessary. Microservices also reduce the time to market and speed up your CI/CD pipeline. This means more agility, too. Besides, isolated services have a better failure tolerance. It’s easier to maintain and debug a lightweight microservice than a complex application, after all.
+
+Cons
+- Needs more collaboration (each team has to cover the whole microservice lifecycle)
+- Harder to test and monitor because of the complexity of the architecture
+- Poorer performance, as microservices need to communicate (network latency, message processing, etc.)
+- Security issues (harder to maintain transaction safety, distributed communication goes wrong more likely, etc.)
+
 #### What is Separation of Concerns?
+ Separation of concerns is a design principle for separating a computer program into distinct sections such that each section addresses a separate concern. A concern is a set of information that affects the code of a computer program. A concern can be as general as "the details of the hardware for an application", or as specific as "the name of which class to instantiate". A program that embodies SoC well is called a modular
 #### What is a layered design and why is it important in enterprise applications?
+Layered architecture patterns are n-tiered patterns where the components are organized in horizontal layers. This is the traditional method for designing most software and is meant to be self-independent. This means that all the components are interconnected but do not depend on each other.
+
+It is easy to test as components belong to specific layers. As such, they can be tested separately.
+It is simple and easy to implement because naturally, most applications work in layers.
+
 #### What is Dependency Injection?
+Dependency Injection (DI) is a design pattern used to implement IoC. It allows the creation of dependent objects outside of a class and provides those objects to a class through different ways. Using DI, we move the creation and binding of the dependent objects outside of the class that depends on them.
 #### What is the DAO pattern? When and how to implement?
+Data Access Object Pattern or DAO pattern is used to separate low level data accessing API or operations from high level business services.
+
+Implementation is made using the following participants:
+- Data Access Object Interface - This interface defines the standard operations to be performed on a model object(s).
+- Data Access Object concrete class - This class implements above interface. This class is responsible to get data from a data source which can be database / xml or any other storage mechanism
+- This object is simple entity containing get/set methods to store data retrieved using DAO class.
+
 #### What is SOA? When to use?
+
+A service-oriented architecture (SOA) is an architectural pattern in computer software design in which application components provide services to other components via a communications protocol, typically over a network. The principles of service-orientation are independent of any product, vendor or technology.
+
+The web services themselves can exchange data with each other and because of the underlying principles on which they are created, they don't need any sort of human interaction and also don't need any code modifications. It ensures that the web services on a network can interact with each other seamlessly.
 
 ### Testing
 #### What are unit test, integration test, system test, regression test, acceptance test? What is the major difference between these?
+
 #### What is code coverage? Why is it used? How you can measure?
 #### What does mocking mean? How would you do it 'manually' (i. e. without using any fancy framework)?
 #### What is a test case? What is an assertion? Give examples!
