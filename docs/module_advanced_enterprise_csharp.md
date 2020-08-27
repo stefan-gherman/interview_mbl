@@ -17,14 +17,32 @@ ASP.NET MVC is basically a web development framework from Microsoft, which combi
 
 - The Controller − A set of classes that handles communication from the user, overall application flow, and application-specific logic.
 #### Explain the page lifecycle of MVC.
-
+- The entry point for every MVC application begins with routing. After the ASP.NET platform has received a request, it figures out how it should be handled through the URL Routing Module
+- The MVC framework handles converting the route data into a concrete controller that can handle requests. After the controller has been created, the next major step is Action Execution. A component called the action invoker finds and selects an appropriate Action method to invoke the controller.
+- After our action result has been prepared, the next stage triggers, which is Result Execution. MVC separates declaring the result from executing the result. If the result is a view type, the View Engine will be called and it's responsible for finding and rending our view.
+- If the result is not a view, the action result will execute on its own. This Result Execution is what generates an actual response to the original HTTP request.
 #### What is Razor View Engine?
+Razor View engine is a markup syntax which helps us to write HTML and server-side code in web pages using C# or VB.NET. It is server-side markup language however it is not at all a programming language.
 #### What you mean by Routing in MVC?
+Routing is the process of directing an HTTP request to a controller
 #### What is Layout in MVC?
+The layout view allows you to define a common site template, which can be inherited in multiple views to provide a consistent look and feel in multiple pages of an application. The layout view eliminates duplicate coding and enhances development speed and easy maintenance.
 #### What ConfigureServices() method does in Startup.cs?
+The ConfigureServices method is a place where you can register your dependent classes with the built-in IoC container. After registering dependent class, it can be used anywhere in the application. You just need to include it in the parameter of the constructor of a class where you want to use it. The IoC container will inject it automatically.
 #### What Configure() method does in Startup.cs?
+The Configure method is used to specify how the app responds to HTTP requests. The request pipeline is configured by adding middleware components to an IApplicationBuilder instance.
 #### What is wwwroot folder in ASP.NET Core?
+By default, the wwwroot folder in the ASP.NET Core project is treated as a web root folder. Static files can be stored in any folder under the web root and accessed with a relative path to that root.
 #### What’s the usage of [InternalsVisibleTo] attribute? What are pros and cons of it?
+
+Specifies that types that are ordinarily visible only within the current assembly are visible to a specified assembly.It gives you the ability to expose methods marked internal to a specific assembly. It is mostly used for testing
+
+Cons
+- Private methods you wish to test have to be made internal instead and therefore accessible from outside the type
+
+Pros
+- Doesn’t break all the encapsulation of your application
+
 #### Explain what is WCF?
 Windows Communication Foundation (WCF) is a framework for building service-oriented applications. Using WCF, you can send data as asynchronous messages from one service endpoint to another. A service endpoint can be part of a continuously available service hosted by IIS, or it can be a service hosted in an application. An endpoint can be a client of a service that requests data from a service endpoint. The messages can be as simple as a single character or word sent as XML, or as complex as a stream of binary data
 #### Mention what is the endpoint in WCF and what are the three major points in WCF?
