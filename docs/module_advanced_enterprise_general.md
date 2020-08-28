@@ -115,12 +115,34 @@ Waterfall, Agile
 UML is an acronym that stands for Unified Modeling Language. Simply put, UML is a modern approach to modeling and documenting software. In fact, it’s one of the most popular business process modeling techniques.
 
 Types:
-
+- Activity Diagram
+- Use Case Diagram
+- State Machine UML diagram
+- Class Diagram
 #### What is a UML class diagram? What are the typical elements?
+In a nutshell, class diagrams contain classes, alongside with their attributes (also referred to as data fields) and their behaviors (also referred to as member functions). More specifically, each class has 3 fields: the class name at the top, the class attributes right below the name, the class operations/behaviors at the bottom. The relation between different classes (represented by a connecting line), makes up a class diagram.
 #### What kind of design patterns do you know? Bring at least 3 examples.
+- Factory Pattern: In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface.
+- Singleton: This pattern involves a single class which is responsible to create an object while making sure that only single object gets created. This class provides a way to access its only object which can be accessed directly without need to instantiate the object of the class.
+- Data Access Object:  is used to separate low level data accessing API or operations from high level business services.
 #### What is the purpose of the Iterator Pattern?
+This pattern is used to get a way to access the elements of a collection object in sequential manner without any need to know its underlying representation.
 #### What do you know about the SOLID principles?
+SOLID is a mnemonic acronym for five design principles intended to make software designs more understandable, flexible and maintainable.
+
+S — Single Responsibility: If a Class has many responsibilities, it increases the possibility of bugs because making changes to one of its responsibilities, could affect the other ones without you knowing.
+
+O — Open-Closed: Changing the current behaviour of a Class will affect all the systems using that Class.
+If you want the Class to perform more functions, the ideal approach is to add to the functions that already exist NOT change them.
+
+L — Liskov Substitution: If you have a Class and create another Class from it, it becomes a parent and the new Class becomes a child. The child Class should be able to do everything the parent Class can do. This process is called Inheritance.
+The child Class should be able to process the same requests and deliver the same result as the parent Class or it could deliver a result that is of the same type.
+
+I — Interface Segregation: A Class should perform only actions that are needed to fulfil its role. Any other action should be removed completely or moved somewhere else if it might be used by another Class in the future.
+
+D — Dependency Inversion: This principle says a Class should not be fused with the tool it uses to execute an action. Rather, it should be fused to the interface that will allow the tool to connect to the Class.
 #### How would you separate data storage code and business logic code (which uses stored data) in an application?
+With the MVC pattern or DAO pattern
 
 ## Computer science
 
