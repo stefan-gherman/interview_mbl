@@ -83,12 +83,48 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
 
 ### Data Structures
 #### What is the difference between Stack and Queue data structure?
+Stack works on the FIFO principle(First in First Out) while a Queue works on the LIFO principle (Last in First Out)
 #### What is a graph? What are simple graphs? What are directed graphs? What are weighted graphs?
+A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edge
+
+- Simple Graph: A graph with no loops and no parallel edges is called a simple graph.
+- Directed Graphs: A graph where edges have orientations from one node to the other
+- Weigthed Graphs: A graph where edges have a cost associated to them
 #### What are trees? What are binary trees? What are binary search trees?
+- Tree: An acyclic graph
+- Binary Tree: A tree where each node has at most 2 children
+- Binary Search Tree: A binary tree where all children of the root smaller than it are on its left subtree while all the children bigger than the root are on the right subtree
 #### How can you store graphs in programs? What are the advantages/disadvantages per each?
+
+
+- Storing nodes as objects with pointers to one another
+
+The memory complexity for this approach is O(n) because you have as many objects as you have nodes. The number of pointers (to nodes) required is up to O(n^2) as each node object may contain pointers for up to n nodes.
+The time complexity for this data structure is O(n) for accessing any given node.
+
+- Storing a matrix of edge weights
+
+This would be a memory complexity of O(n^2) for the matrix.
+The advantage with this data structure is that the time complexity to access any given node is O(1).
 #### What are graph traversal algorithms? What is BFS, how does it work? What is DFS, how does it work?
+A graph traversal alghoritm is a set of instructions used to go through nodes of the graph
+
+A depth-first search (DFS) explores a path all the way to a leaf before backtracking and exploring another path. 
+- Takes less memory
+- The disadvantages are that it takes longer, and will not always find the shortest path
+- Can get struck if Tree has loops
+- Uses stack as underlying data structure
+
+A breadth-first search (BFS) explores nodes nearest the root before exploring nodes further away
+- Will Always find shortest path
+- Can Deal with Looping Structures
+- Takes lot of memory
+- Uses queue as underlying data structure
+
 #### How does dictionary work?
+The Dictionary class in C# represents a generic data structure that can contain keys and values of data. Hence, you can store data of any type in a Dictionary instance.
 #### Why is it important for keys in a hashmap to have an immutable type? (Consider string for example.)
+If immutable, the object's hashcode wont change and it allows caching the hashcode of different keys which makes the overall retrieval process very fast.
 
 ### Algorithms
 #### What is QuickSort? Describe the main logic of this sorting algorithm.
