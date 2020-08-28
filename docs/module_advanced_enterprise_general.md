@@ -43,14 +43,52 @@ The web services themselves can exchange data with each other and because of the
 
 ### Testing
 #### What are unit test, integration test, system test, regression test, acceptance test? What is the major difference between these?
+Unit test: when it fails, it tells you what piece of your code needs to be fixed.
 
+Integration test: when it fails, it tells you that the pieces of your application are not working together as expected.
+
+Acceptance test: when it fails, it tells you that the application is not doing what the customer expects it to do.
+
+Regression test: when it fails, it tells you that the application no longer behaves the way it used to.
 #### What is code coverage? Why is it used? How you can measure?
-#### What does mocking mean? How would you do it 'manually' (i. e. without using any fancy framework)?
-#### What is a test case? What is an assertion? Give examples!
-#### What is TDD? What are the benefits?
-#### What are the unit testing best practices? (Eg. how many assertion should a test case contain?)
-#### What is arrange/act/assert pattern?
+Code coverage is a measurement of how many lines/blocks/arcs of your code are executed while the automated tests are running.
 
+Code coverage is collected by using a specialized tool to instrument the binaries to add tracing calls and run a full set of automated tests against the instrumented product. A good tool will give you not only the percentage of the code that is executed, but also will allow you to drill into the data and see exactly which lines of code were executed during a particular test.
+#### What does mocking mean? How would you do it 'manually' (i. e. without using any fancy framework)?
+Mocking is primarily used in unit testing. An object under test may have dependencies on other (complex) objects. To isolate the behavior of the object you want to replace the other objects by mocks that simulate the behavior of the real objects. This is useful if the real objects are impractical to incorporate into the unit test.
+
+In short, mocking is creating objects that simulate the behavior of real objects.
+
+To give an example: You can stub a database by implementing a simple in-memory structure for storing records. The object under test can then read and write records to the database stub to allow it to execute the test. This could test some behavior of the object not related to the database and the database stub would be included just to let the test run.
+#### What is a test case? What is an assertion? Give examples!
+A TEST CASE is a set of actions executed to verify a particular feature or functionality of your software application. A Test Case contains test steps, test data, precondition, postcondition developed for specific test scenario to verify any requirement. 
+
+In test automation, assertion is the validation step that determines whether the automated test case succeeded or not.
+
+#### What is TDD? What are the benefits?
+Test Driven Development is a software development practice enabling developers to create proper specifications about how their code should be written and implemented. Fundamentally, TDD is a practice when a programmer writes a functional test before building a code.
+
+Advantages
+- Better program design and higher code quality
+- TDD reduces the time required for project development
+- Code flexibility and easier maintenance
+#### What are the unit testing best practices? (Eg. how many assertion should a test case contain?)
+Usually, a good test is:
+
+- Trustworthy. That means that it fails only if it is broken. If tests can sometimes fail then it is flaky and can’t be called a good test.
+Readable/maintainable. From reading a test, it should be clear what it tests and how it is done. It should have no boilerplate or tricky tweaks of state or control.
+
+- Should verify a single use case. This is related to the single responsibility principle. If a test verifies multiple cases then if it fails, we can’t say why exactly. A good test verifies a single use case and when it fails, we immediately know what went wrong.
+- 
+- Isolated. The test should not be able to influence other tests. This particularly implies that tests should not share a global state. If tests are not isolated, then the order in which they are executed can lead to unexpected results.
+#### What is arrange/act/assert pattern?
+Apattern for arranging and formatting code in UnitTest methods:
+
+Each method should group these functional sections, separated by blank lines:
+
+- Arrange all necessary preconditions and inputs.
+- Act on the object or method under test.
+- Assert that the expected results have occurred.
 ### DevOps
 #### What is continuous integration? Why is CI important?
 Developers practicing continuous integration merge their changes back to the main branch as often as possible. The developer's changes are validated by creating a build and running automated tests against the build. By doing so, you avoid the integration hell that usually happens when people wait for release day to merge their changes into the release branch.
@@ -72,7 +110,12 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
 
 ### Software Methodologies
 #### What kind of software-lifecycle models do you know?
+Waterfall, Agile
 #### What is a UML diagram? What kind of diagram types do you know?
+UML is an acronym that stands for Unified Modeling Language. Simply put, UML is a modern approach to modeling and documenting software. In fact, it’s one of the most popular business process modeling techniques.
+
+Types:
+
 #### What is a UML class diagram? What are the typical elements?
 #### What kind of design patterns do you know? Bring at least 3 examples.
 #### What is the purpose of the Iterator Pattern?
